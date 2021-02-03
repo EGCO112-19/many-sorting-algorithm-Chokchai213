@@ -9,17 +9,21 @@
 #define selection_h
 
 
-void selection(int a[], int N){
+void selection(int a[], int N)
+{
     int i;
     int j;
     int min,mi;// น้อยที่สุด
     int temp;
     
    // min=a[0];
-   for(i=0;i<N-1;i++){
+   for(i=0;i<N-1;i++)
+   {
     mi=i;  //min=a[mi];
-    for(j=i+1;j<N;j++){
-       if(a[mi]> a[j] ) {
+    for(j=i+1;j<N-1;j++)
+    {
+       if(a[mi]> a[j]) 
+       {
          //min=a[j];
          mi=j;
        }
